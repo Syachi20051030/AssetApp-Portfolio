@@ -1,0 +1,16 @@
+# Pythonのキャッシュファイル
+__pycache__/
+*.py[cod]
+
+# 仮想環境
+.venv/
+venv/
+
+# 環境変数・APIキーなど
+.env
+
+# VS Codeの一部設定
+.vscode/
+
+# 個人の保有銘柄データ
+data/

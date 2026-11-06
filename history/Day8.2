@@ -1,0 +1,43 @@
+def calculate_total(price, shares):
+    return price * shares
+
+stocks = []
+
+#1銘柄目
+name = input("銘柄名を入力してください：")
+shares = int(input("株数を入力してください："))
+price = int(input("価格を入力してください："))
+
+stock1 = {
+    "name":name,
+    "shares":shares,
+    "price":price
+}
+
+stocks.append(stock1)
+
+#2銘柄目
+name = input("銘柄名を入力してください：")
+shares = int(input("株数を入力してください："))
+price = int(input("価格を入力してください："))
+
+stock2 = {
+    "name":name,
+    "shares":shares,
+    "price":price
+}
+
+stocks.append(stock2)
+
+#一覧表示
+for stock in stocks:
+    total = calculate_total(
+        stock["price"],
+        stock["shares"]
+    )
+
+    print("銘柄：",stock["name"])
+    print("株数：",stock["shares"])
+    print("取得価格：",stock["price"])
+    print("購入総額：",total)
+    print()
